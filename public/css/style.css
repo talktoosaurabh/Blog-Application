@@ -1,0 +1,107 @@
+@import "compass/css3";
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+/* Header css */
+
+.Nav-fonts {
+    font-family: 'Redressed', cursive;
+    font-size: 21px!important;
+}
+
+#footerSection {
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* Registration and Login css */
+
+.login {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F0F0F0;
+}
+
+.register {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F0F0F0;
+}
+
+.sub_div {
+    width: 27%;
+}
+
+div h3 {
+    font-family: 'Lobster', cursive;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* contact-us css */
+
+.contact-tittle {
+    text-align: center;
+    color: #a8a8a8;
+    text-shadow: 1px 1px 0 rgba(white, 1);
+}
+
+.contact-form {
+    max-width: 70%;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.contact-fields {
+    border: 0;
+    outline: 0;
+    padding: 1em;
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    margin-top: 1em;
+    font-family: 'Merriweather', 'sans-serif';
+    box-shadow: 0 1px 1px rgba(black, 0.1);
+    resize: none;
+}
+
+#input-submit {
+    color: white;
+    background: #e74c3c;
+    cursor: pointer;
+}
+
+.contact-half {
+    float: left;
+    width: 48%;
+    margin-bottom: 1em;
+}
+
+.contact-right {
+    width: 50%;
+}
+
+.contact-left {
+    margin-right: 2%;
+}
+
+@media (max-width: 480px) {
+    .contact-half {
+        width: 100%;
+        float: none;
+        margin-bottom: 0;
+    }
+    .sub_div {
+        width: auto;
+    }
+}
