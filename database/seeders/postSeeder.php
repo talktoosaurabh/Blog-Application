@@ -15,23 +15,23 @@ class postSeeder extends Seeder
     {
          DB::table('posts')->insert([
             [ 'userId'=>1,
-              'tittle'=>'Dummy Text 1 UserID 1',
-             'image'=>'https://www.infofast.com.br/wp-content/uploads/2020/04/Lorem-Ipsum.png',
+              'tittle'=>'Cool Image',
+             'image'=>'https://img.freepik.com/free-photo/cool-geometric-triangular-figure-neon-laser-light-great-backgrounds-wallpapers_181624-9331.jpg?size=626&ext=jpg',
              'content'=>'Lorem Ipsum is simply dummy text of the printing and typesetting industry '],
 
             [ 'userId'=>1,
-             'tittle'=>'Dummy Text 2 UserID 1',
-             'image'=>'https://www.infofast.com.br/wp-content/uploads/2020/04/Lorem-Ipsum.png',
+             'tittle'=>'Best Image',
+             'image'=>'https://wallpaperaccess.com/full/167408.jpg',
              'content'=>'Lorem Ipsum is simply dummy text of the printing and typesetting industry '],
 
             [ 'userId'=>2,
-             'tittle'=>'Dummy Text 1 UserID 2',
-             'image'=>'https://www.infofast.com.br/wp-content/uploads/2020/04/Lorem-Ipsum.png',
+             'tittle'=>'Lion King',
+             'image'=>'https://wallpaperaccess.com/full/167408.jpg',
              'content'=>'Lorem Ipsum is simply dummy text of the printing and typesetting industry '],
 
             [ 'userId'=>2,
-              'tittle'=>'Dummy Text 2 UserID 2',
-              'image'=>'https://www.infofast.com.br/wp-content/uploads/2020/04/Lorem-Ipsum.png',
+              'tittle'=>'Hacker Boy',
+              'image'=>'https://wallpapercave.com/wp/wp2553589.jpg',
               'content'=>'Lorem Ipsum is simply dummy text of the printing and typesetting industry']
          ]);
     }

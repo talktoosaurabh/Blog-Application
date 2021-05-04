@@ -10,7 +10,7 @@ class blogController extends Controller
     function index()
     {
         $value = session()->get('userSession')['id'];
-        $data=post::where(['userId'=>$value])->get();
+        $data=post::where(['userId'=>$value])->orderBy('id','desc')->get();
         return view('blog',['blogDetails'=>$data]);
     }
 

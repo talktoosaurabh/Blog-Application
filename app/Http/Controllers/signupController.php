@@ -20,7 +20,7 @@ class signupController extends Controller
           return redirect('/blog');
        }
        else{
-        return "username or pasword does not match";
+        return redirect('/login')->with('warning', 'username or pasword does not match');
        }
     }
 
