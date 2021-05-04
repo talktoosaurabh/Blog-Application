@@ -10,7 +10,7 @@
 
 <div class="container mt-5">
     @foreach($blogDetails as $blogpost)
-      <div class="card border-success mb-3">
+      <div class="card shadow mb-5">
           <img class="card-img-top" src='{{$blogpost["image"]}}' alt="Card image cap">
               <div class="card-body">
                   <h5 class="card-title">{{$blogpost['tittle']}}</h5>

@@ -3,6 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
+/* @import url('https://fonts.googleapis.com/css2?family=Galada&display=swap'); */
+
+
 /* Header css */
 
 .Nav-fonts {
@@ -93,6 +96,52 @@ a {
 
 .contact-left {
     margin-right: 2%;
+}
+
+
+/* blog css */
+
+.shadow {
+    box-shadow: 0 5px 20px 0 rgb(138 155 165 / 50%);
+}
+
+.main_title h1 {
+    font-weight: 500px;
+    font-size: 50px;
+    color: #000;
+    text-align: center;
+    padding-top: 30px;
+    font-family: 'Galada', cursive;
+}
+
+.main_title p {
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+    padding-top: 7px;
+    font-family: 'Merriweather', 'sans-serif';
+}
+
+.about_text {
+    margin-top: 30px;
+}
+
+.about_text h1 {
+    font-size: 33px;
+    color: #000;
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+.about_text p {
+    font-size: 20px;
+    color: #000;
+}
+
+.about_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-width: 480px) {
