@@ -1,9 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Models\post;
 use Symfony\Component\HttpFoundation\Session\Session;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\contactSupport;
 
 class blogController extends Controller
 {
@@ -31,4 +34,19 @@ class blogController extends Controller
              return redirect('/login');
          }
      }
+
+    public function support(Request $req)
+    {
+      $details=[
+        'name'=>$req->fname,
+        'email'=>$req->femail,
+        'subject'=>$req->fsubject,
+        'message'=>$req->fmessage
+      ];
+
+      Mail::to('contactsaurabhsngh@gmail.com')->send(new contactSupport($details));
+
+      return "Email Sent";
+
+    }
 }

@@ -16,6 +16,8 @@ Route::group(['middleware' => 'revalidate'],function(){
 
     Route::post('/update',[blogController::class,'blogpost']);
 
+    Route::post('/support',[blogController::class,'support']);
+
     Route::get('/contact', function () {
         return view('contact');
     });
