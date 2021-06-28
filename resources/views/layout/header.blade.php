@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark Nav-fonts">
     @if(Session::has('userSession'))
-      <a class="navbar-brand ml-3" href="#">{{Session::get('userSession')['name']}}</a>
+      <a class="navbar-brand ml-3" href="#">Hii, {{Session::get('userSession')['name']}}</a>
     @else
     <a class="navbar-brand ml-3" href="#">Blog Application</a>
     @endif

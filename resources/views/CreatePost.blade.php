@@ -8,6 +8,7 @@
     @include('layout.header')
 </div>
 
+
 <div class="login">
     <div class="sub_div">
 
@@ -18,16 +19,16 @@
              @csrf
               <div class="align-items-center">
                 <div class="mt-4">
-                    <input type="text" name="btittle" class="form-control" placeholder="Post Tittle" required>
+                    <input type="text" name="btittle" class="form-control" placeholder="Post Tittle" value="@php echo ((isset($postDetails->tittle))?''.$postDetails->tittle:'') @endphp" required>
                 </div>
 
                 <div class="mt-4 custom-file">
-                    <input type="file" name="bimage" class="custom-file-input" id="customFile">
-                    <label class="custom-file-label" for="customFile">Post Image</label>
+                    <input type="file" name="bimage" class="custom-file-input" id="customFile" required>
+                    <label class="custom-file-label" for="customFile">@php if(isset($postDetails->image)) echo $postDetails->image ;else echo "Upload Image";@endphp</label>
                 </div>
 
                 <div class="mt-3">
-                <textarea class="form-control" name="bcontent" placeholder="Blog Content" rows="4"></textarea>
+                    <textarea class="form-control" name="bcontent" placeholder="Blog Content" rows="4" required>@php if(isset($postDetails->content)) echo $postDetails->content ;@endphp</textarea>
                 </div>
 
                 <div class="mt-3">

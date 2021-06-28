@@ -144,6 +144,26 @@ a {
     align-items: center;
 }
 
+/* blog post */
+
+.left_left{
+    float: left;
+    width: 88%
+}
+
+.right_post{
+    width: 12%;
+    float: right;
+}
+
+.right_post button{
+    width: 40px;
+}
+
+.left_left button{
+    width: 40px;
+}
+
 @media (max-width: 480px) {
     .contact-half {
         width: 100%;

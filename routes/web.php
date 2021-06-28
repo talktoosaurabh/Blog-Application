@@ -16,6 +16,10 @@ Route::group(['middleware' => 'revalidate'],function(){
 
     Route::post('/update',[blogController::class,'blogpost']);
 
+    Route::post('/editPost',[blogController::class,'editPost']);
+
+    Route::post('/deletePost',[blogController::class,'deletePost']);
+
     Route::post('/support',[blogController::class,'support']);
 
     Route::get('/contact', function () {
