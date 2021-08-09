@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark Nav-fonts">
+<nav class="navbar navbar-expand-lg navbar-dark  Nav-fonts">
     @if(Session::has('userSession'))
       <a class="navbar-brand ml-3" href="#">Hii, {{Session::get('userSession')['name']}}</a>
     @else

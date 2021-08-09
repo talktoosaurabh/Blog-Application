@@ -1,9 +1,6 @@
-@import "compass/css3";
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
 @import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-
-/* @import url('https://fonts.googleapis.com/css2?family=Galada&display=swap'); */
 
 
 /* Header css */
@@ -11,13 +8,14 @@
 .Nav-fonts {
     font-family: 'Redressed', cursive;
     font-size: 21px!important;
+    background-color: #565090;
 }
 
 #footerSection {
     bottom: 0;
     width: 100%;
+    background-color: #565090;
 }
-
 
 /* Registration and Login css */
 
@@ -144,6 +142,10 @@ a {
     align-items: center;
 }
 
+.mobile-view{
+    display: none;
+}
+
 /* blog post */
 
 .left_left{
@@ -164,6 +166,25 @@ a {
     width: 40px;
 }
 
+.main-blog{
+    display: flex!important;
+    width: 100%;
+}
+
+.left-blog{
+    width: 50%;
+    float: left;
+}
+
+.right-blog{
+    width: 50%;
+    float: right;
+}
+
+.desktop-view{
+    display: block;
+}
+
 @media (max-width: 480px) {
     .contact-half {
         width: 100%;
@@ -172,5 +193,14 @@ a {
     }
     .sub_div {
         width: auto;
+    }
+    .mobile-view{
+        display: block;
+    }
+    .desktop-view{
+        display: none;
+    }
+    .image-control{
+        height: 40vh;
     }
 }

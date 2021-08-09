@@ -15,16 +15,18 @@
         <h3 class="text-center">Create Blog Post</h3>
 
         <div>
-            <form method="post" action="/update">
+            <form method="post" action="/update" enctype="multipart/form-data">
              @csrf
               <div class="align-items-center">
                 <div class="mt-4">
                     <input type="text" name="btittle" class="form-control" placeholder="Post Tittle" value="@php echo ((isset($postDetails->tittle))?''.$postDetails->tittle:'') @endphp" required>
                 </div>
 
-                <div class="mt-4 custom-file">
-                    <input type="file" name="bimage" class="custom-file-input" id="customFile" required>
-                    <label class="custom-file-label" for="customFile">@php if(isset($postDetails->image)) echo $postDetails->image ;else echo "Upload Image";@endphp</label>
+                <div class="input-group mt-4">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">Image Upload</span>
+                    </div>
+                    <input type="file"  name="image" class="form-control" aria-describedby="basic-addon1">
                 </div>
 
                 <div class="mt-3">
@@ -32,15 +34,13 @@
                 </div>
 
                 <div class="mt-3">
-                  <button type="submit" name="bupload" class="form-control btn btn-primary mb-2">Upload</button>
+                  <button type="submit" class="form-control btn btn-primary mb-2">Upload</button>
                 </div>
               </div>
             </form>
         </div>
     </div>
 </div>
-
-
 
 <div id="footerSection">
     @include('layout.footer')

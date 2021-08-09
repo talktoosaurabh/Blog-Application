@@ -22,12 +22,16 @@ Route::group(['middleware' => 'revalidate'],function(){
 
     Route::post('/support',[blogController::class,'support']);
 
-    Route::get('/contact', function () {
-        return view('contact');
-    });
+    Route::post('/post-view',[blogController::class,'singlePost']);
+
+    Route::get('/singlePost/post-id={id}',[blogController::class,'singlePostView']);
 
     Route::get('/login', function () {
         return view('login');
+    });
+
+    Route::get('/contact', function () {
+        return view('contact');
     });
 
     Route::get('/register', function () {

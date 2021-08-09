@@ -13,8 +13,8 @@
 
         <h3 class="text-center">Create Account</h3>
         <p class="text-center">Get started with your free account</p>
-        <button class="form-control text-center text-white bg-danger mb-3"><i class="fa fa-google bg-danger mr-2" aria-hidden="true"></i>Login via Gmail</button>
-        <button class="form-control text-center text-white bg-primary"><i class="fa fa-facebook bg-primary mr-2" aria-hidden="true"></i>Login via Facebook</button>
+        <button class="form-control text-center text-white bg-danger mb-3"><i class="fa fa-envelope  mr-2"></i>Login via Gmail</button>
+        <button class="form-control text-center text-white bg-primary"><i class="fa fa-facebook mr-2" ></i>Login via Facebook</button>
 
         <div>
             <form method="post" action="/creatAccount">
@@ -32,7 +32,7 @@
                 <div class="mt-3">
                   <div class="input-group mb-2">
                     <div class="input-group-prepend">
-                      <div class="input-group-text"><i class="fa fa-google" aria-hidden="true"></i></div>
+                      <div class="input-group-text"><i class="fa fa-envelope"></i></div>
                     </div>
                     <input type="email" name="gmail" class="form-control"  placeholder="E-mail" required>
                   </div>

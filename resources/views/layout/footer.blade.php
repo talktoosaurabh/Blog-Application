@@ -1,4 +1,4 @@
-<footer class="bg-dark text-center text-white ">
+<footer class="text-center text-white ">
     <div class="container p-4 pb-0">
       <!-- Section: Social media -->
       <section class="mb-2">
@@ -32,9 +32,9 @@
     <!-- Grid container -->
 
     <!-- Copyright -->
-    <div class="text-center pb-3 bg-dark ">
-      © 2020 Copyright |
-      <a class="text-white Nav-fonts" href="#!" role="button">Saurabh_Here</a>
+    <div class="text-center pb-3 ">
+      ©Copyright 2020 |
+      <a class="text-white" href="#!" role="button">Saurabh & Team</a>
     </div>
     <!-- Copyright -->
   </footer>

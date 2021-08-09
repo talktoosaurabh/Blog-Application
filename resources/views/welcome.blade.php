@@ -17,7 +17,15 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="d-block w-100" src="{{ URL::asset('images/slider.png') }}" alt="First slide">
+        <img class="d-block w-100 image-control" src="{{ URL::asset('images/slider.png') }}" alt="First slide">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Publish your passions, your way</h5>
+            <p>Create a unique and beautiful blog. It’s easy and free.</p>
+            <button type="button"onclick="blog()" class="btn btn-primary mb-4">Start Blog</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100 image-control" src="{{ URL::asset('images/slider.png') }}" alt="Second slide">
         <div class="carousel-caption d-none d-md-block">
             <h5>Publish your passions, your way</h5>
             <p>Create a unique and beautiful blog. It’s easy and free.</p>
@@ -25,15 +33,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="{{ URL::asset('images/slider.png') }}" alt="Second slide">
-        <div class="carousel-caption d-none d-md-block">
-            <h5>Publish your passions, your way</h5>
-            <p>Create a unique and beautiful blog. It’s easy and free.</p>
-            <button type="button" class="btn btn-primary mb-4">Start Blog</button>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="{{ URL::asset('images/slider.png') }}" alt="Third slide">
+        <img class="d-block w-100 image-control" src="{{ URL::asset('images/slider.png') }}" alt="Third slide">
         <div class="carousel-caption d-none d-md-block">
             <h5>Publish your passions, your way</h5>
             <p>Create a unique and beautiful blog. It’s easy and free.</p>
@@ -86,7 +86,7 @@
                 <p>" We provide the best Blogging Features in the Market "</p>
             </div>
             <div class="row pt-5">
-               <div class="col-lg-3 col-sm-9 offset-1">
+               <div class="col-lg-3 col-sm-9 offset-1 mt-3">
                 <div class="card shadow" style="width: 18rem;" >
                     <img src="{{ URL::asset('images/slider.png') }}" class="card-img-top" alt="...">
                     <div class="card-body text-center">
@@ -97,7 +97,7 @@
                   </div>
                </div>
 
-               <div class="col-lg-3 col-sm-9 offset-1">
+               <div class="col-lg-3 col-sm-9 offset-1 mt-3">
                 <div class="card shadow" style="width: 18rem;">
                     <img src="{{ URL::asset('images/slider.png') }}" class="card-img-top" alt="...">
                     <div class="card-body text-center">
@@ -108,8 +108,8 @@
                   </div>
                </div>
 
-               <div class="col-lg-3 col-sm-9 offset-1">
-                <div class="card shadow" style="width: 18rem;">
+               <div class="col-lg-3 col-sm-9 offset-1 mt-3">
+                 <div class="card shadow" style="width: 18rem;">
                     <img src="{{ URL::asset('images/slider.png') }}" class="card-img-top" alt="...">
                     <div class="card-body text-center">
                       <h5 class="card-title">Security</h5>
@@ -127,7 +127,7 @@
 
 {{-- contact us --}}
 
-<h1 class="mt-5 contact-tittle mb-5">Blog Support</h1>
+<h1 class="mt-5 pt-5 contact-tittle mb-5">Blog Support</h1>
 <form class="cf mb-5 contact-form" method="POST" action="/support">
     @csrf
     <div class="contact-half contact-left cf">
